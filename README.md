@@ -1,2 +1,1 @@
-# clientservermultithread
-Simple client-server architecture in C.
+# Client-server architecture in C
