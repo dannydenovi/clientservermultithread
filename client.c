@@ -17,10 +17,10 @@ int main() {
     
     while (i<CLIENT_LIMIT){
         pthread_create(&threads[i], NULL, routine, (void*)(i+1));
-        usleep(500);
+        pthread_join(threads[i], NULL);
         i++;
     }
-    
+
     return 0;
 }
 
